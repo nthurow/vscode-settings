@@ -1,0 +1,33 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+        "key": "shift+ctrl+i",
+        "command": "editor.action.format",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.openPreviousEditorFromHistory"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeEditorsInGroup"
+    },
+    {
+        "key": "shift+ctrl+r",
+        "command": "workbench.action.replaceInFiles"
+    }
+]
