@@ -8,5 +8,8 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "workbench.editor.showTabs": false,
     "editor.renderIndentGuides": true,
-    "explorer.openEditors.visible": 0
+    "explorer.openEditors.visible": 0,
+    "git.enableLongCommitWarning": false,
+    "search.quickOpen.includeSymbols": true,
+    "extensions.autoUpdate": true
 }
