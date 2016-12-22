@@ -2,7 +2,7 @@
 [
     {
         "key": "shift+cmd+i",
-        "command": "editor.action.format",
+        "command": "editor.action.formatDocument",
         "when": "editorTextFocus"
     },
     {
