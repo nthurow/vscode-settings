@@ -29,5 +29,13 @@
     {
         "key": "shift+cmd+r",
         "command": "workbench.action.replaceInFiles"
+    },
+    {
+        "key": "cmd+alt+c",
+        "command": "workbench.action.git.globalOpenChange"
+    },
+    {
+        "key": "cmd+alt+e",
+        "command": "workbench.action.git.globalOpenFile"
     }
 ]
