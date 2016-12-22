@@ -11,5 +11,7 @@
     "explorer.openEditors.visible": 0,
     "git.enableLongCommitWarning": false,
     "search.quickOpen.includeSymbols": true,
-    "extensions.autoUpdate": true
+    "extensions.autoUpdate": true,
+    "files.insertFinalNewline": true,
+    "editor.renderLineHighlight": "all"
 }
