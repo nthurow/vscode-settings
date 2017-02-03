@@ -12,8 +12,16 @@
     "git.enableLongCommitWarning": false,
     "search.quickOpen.includeSymbols": true,
     "extensions.autoUpdate": true,
+    "eslint.autoFixOnSave": true,
+    "git.confirmSync": false,
+    "files.associations": {
+      "*.conf": "logstash"
+    },
     "files.insertFinalNewline": true,
     "editor.renderLineHighlight": "all",
     "window.zoomLevel": 0,
-    "git.confirmSync": false
+    "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
+    "window.newWindowDimensions": "maximized",
+    "editor.formatOnPaste": true
   }
