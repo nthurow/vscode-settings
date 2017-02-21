@@ -23,5 +23,6 @@
     "window.openFilesInNewWindow": "on",
     "window.openFoldersInNewWindow": "on",
     "window.newWindowDimensions": "maximized",
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "debug.inlineValues": true
   }

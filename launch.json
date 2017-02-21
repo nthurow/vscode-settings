@@ -1,0 +1,185 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "attach",
+			"name": "forever",
+			"port": 6060,
+			"skipFiles": [
+				"<node_internals>/events.js",
+				"<node_internals>/fs.js",
+				"<node_internals>/module.js",
+				"<node_internals>/util.js",
+				"<node_internals>/buffer.js",
+				"**/node_modules/json3/lib/json3.js",
+				"**/node_modules/mongodb-core/lib/auth/gssapi.js",
+				"**/node_modules/mongodb-core/lib/auth/sspi.js",
+				"**/node_modules/bluebird/js/main/util.js",
+				"**/node_modules/bluebird/js/main/async.js",
+				"**/node_modules/mongodb/lib/collection.js",
+				"**/node_modules/newrelic/lib/instrumentation/promise.js",
+				"**/node_modules/sinon/lib/sinon/util/fake_xml_http_request.js",
+				"**/node_modules/bluebird/js/release/util.js",
+				"**/node_modules/bluebird/js/release/async.js",
+				"**/node_modules/bluebird/js/release/debuggability.js",
+				"**/node_modules/sinon/lib/sinon/assert.js"
+			]
+		},
+		{
+			"name": "Launch",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceRoot}/bin/www",
+			"stopOnEntry": false,
+			"args": [
+				"--e2e-mode", "off",
+				"--e2e-recordings", "/Users/nthurow/Work/uhubdashboardui/test/e2e/recordings.txt.gz"
+			],
+			"cwd": "${workspaceRoot}",
+			"preLaunchTask": null,
+			"runtimeExecutable": "${workspaceRoot}/.vscode/launch.sh",
+			"runtimeArgs": [
+				"--nolazy"
+			],
+			"skipFiles": [
+				"<node_internals>/events.js",
+				"<node_internals>/fs.js",
+				"<node_internals>/module.js",
+				"<node_internals>/util.js",
+				"**/node_modules/mongodb-core/lib/auth/gssapi.js",
+				"**/node_modules/mongodb-core/lib/auth/sspi.js",
+				"**/node_modules/bluebird/js/main/util.js",
+				"**/node_modules/bluebird/js/main/async.js",
+				"**/node_modules/mongodb/lib/collection.js",
+				"**/node_modules/newrelic/lib/instrumentation/promise.js"
+			]
+		},
+		{
+			"name": "Scratchpad",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceRoot}/scratchpad.js",
+			"stopOnEntry": false,
+			"args": [],
+			"cwd": "${workspaceRoot}",
+			"preLaunchTask": null,
+			"runtimeExecutable": null,
+			"runtimeArgs": [
+				"--nolazy"
+			],
+			"externalConsole": false,
+			"sourceMaps": false,
+			"outDir": null
+		},
+		{
+			"name": "Unit Tests",
+			"type": "node",
+			"request": "launch",
+			// Notice, we bypass the launcher and start the test runner directly
+			"program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+			"stopOnEntry": false,
+			// run the tests in the tests folder
+			"args": [
+				"test/unit/**/*.*",
+				"--recursive"
+			],
+			"cwd": "${workspaceRoot}",
+			"runtimeExecutable": null,
+			"env": {},
+			"skipFiles": [
+				"<node_internals>/events.js",
+				"<node_internals>/fs.js",
+				"<node_internals>/module.js",
+				"<node_internals>/util.js",
+				"<node_internals>/buffer.js",
+				"**/node_modules/json3/lib/json3.js",
+				"**/node_modules/mongodb-core/lib/auth/gssapi.js",
+				"**/node_modules/mongodb-core/lib/auth/sspi.js",
+				"**/node_modules/bluebird/js/main/util.js",
+				"**/node_modules/bluebird/js/main/async.js",
+				"**/node_modules/mongodb/lib/collection.js",
+				"**/node_modules/newrelic/lib/instrumentation/promise.js",
+				"**/node_modules/sinon/lib/sinon/util/fake_xml_http_request.js",
+				"**/node_modules/bluebird/js/release/util.js",
+				"**/node_modules/bluebird/js/release/async.js",
+				"**/node_modules/bluebird/js/release/debuggability.js",
+				"**/node_modules/sinon/lib/sinon/assert.js"
+			]
+		},
+		{
+			"name": "Integration Tests",
+			"type": "node",
+			"request": "launch",
+			// Notice, we bypass the launcher and start the test runner directly
+			"program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+			"stopOnEntry": false,
+			// run the tests in the tests folder
+			"args": [
+				"test/integration",
+				"--recursive",
+				"--node-env",
+				"integration"
+			],
+			"cwd": "${workspaceRoot}",
+			"runtimeExecutable": null,
+			"env": {}
+		},
+		{
+			"name": "Endpoint Tests",
+			"type": "node",
+			"request": "launch",
+			// Notice, we bypass the launcher and start the test runner directly
+			"program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+			"stopOnEntry": false,
+			// run the tests in the tests folder
+			"args": [
+				"test/endpoint",
+				"--recursive",
+				"--timeout",
+				"0",
+				"--node-env",
+				"endpoint"
+			],
+			"cwd": "${workspaceRoot}",
+			"runtimeExecutable": null
+		},
+		{
+			"name": "Local Up",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceRoot}/node_modules/mongodb-migrate/index.js",
+			"stopOnEntry": false,
+			"args": [
+				"-runmm",
+				"-cfg",
+				"mongo-migrate-uhub-local.json",
+				"-dbn",
+				"uHubLocalDb",
+				"up"
+			],
+			"cwd": "${workspaceRoot}",
+			"runtimeExecutable": null,
+			"env": {}
+		},
+		{
+			"name": "Local Down",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceRoot}/node_modules/mongodb-migrate/index.js",
+			"stopOnEntry": false,
+			"args": [
+				"-runmm",
+				"-cfg",
+				"mongo-migrate-uhub-local.json",
+				"-dbn",
+				"uHubLocalDb",
+				"down",
+				"226"
+			],
+			"cwd": "${workspaceRoot}",
+			"runtimeExecutable": null,
+			"env": {}
+		}
+	]
+}
