@@ -6,7 +6,6 @@
 			"request": "attach",
 			"name": "forever",
 			"port": 6060,
-			"foo": "bar",
 			"skipFiles": [
 				"<node_internals>/events.js",
 				"<node_internals>/fs.js",
