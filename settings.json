@@ -1,16 +1,16 @@
 // Place your settings in this file to overwrite the default settings
 {
     "files.autoSave": "onFocusChange",
-    "editor.rulers": [120], // Show ruler at 120 chars so you know when your line is too long
-    "html.format.endWithNewline": true, // Helps prevent "missing newline" warnings when creating MRs
-    "editor.formatOnType": true, // Auto format code as you type
-    "editor.tabSize": 2, // Change tabsize to follow our lint rule
-    "diffEditor.ignoreTrimWhitespace": false, // Ignore leading/trailing whitespace in diffs
-    "workbench.editor.showTabs": false, // Hide tabs
-    "editor.renderIndentGuides": true, // Show lines to make it easier to tell when things are indented the same
-    "explorer.openEditors.visible": 0, // Use this setting if you choose to hide tabs
-    "git.enableLongCommitWarning": false, // Disable git long message warning (if you use VSCode git integration)
-    "search.quickOpen.includeSymbols": true, // Include symbols when doing cmd+p
+    "editor.rulers": [120],
+    "html.format.endWithNewline": true,
+    "editor.formatOnType": true,
+    "editor.tabSize": 2,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.editor.showTabs": false,
+    "editor.renderIndentGuides": true,
+    "explorer.openEditors.visible": 0,
+    "git.enableLongCommitWarning": false,
+    "search.quickOpen.includeSymbols": true,
     "extensions.autoUpdate": true,
     "eslint.autoFixOnSave": true,
     "git.confirmSync": false,
