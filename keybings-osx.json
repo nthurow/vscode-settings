@@ -37,5 +37,9 @@
     {
         "key": "cmd+alt+e",
         "command": "workbench.action.git.globalOpenFile"
+    },
+    {
+        "key": "shift+cmd+f5",
+        "command": "workbench.action.debug.run"
     }
 ]
