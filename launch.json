@@ -6,25 +6,6 @@
 			"request": "attach",
 			"name": "forever",
 			"port": 6060,
-			"skipFiles": [
-				"<node_internals>/events.js",
-				"<node_internals>/fs.js",
-				"<node_internals>/module.js",
-				"<node_internals>/util.js",
-				"<node_internals>/buffer.js",
-				"**/node_modules/json3/lib/json3.js",
-				"**/node_modules/mongodb-core/lib/auth/gssapi.js",
-				"**/node_modules/mongodb-core/lib/auth/sspi.js",
-				"**/node_modules/bluebird/js/main/util.js",
-				"**/node_modules/bluebird/js/main/async.js",
-				"**/node_modules/mongodb/lib/collection.js",
-				"**/node_modules/newrelic/lib/instrumentation/promise.js",
-				"**/node_modules/sinon/lib/sinon/util/fake_xml_http_request.js",
-				"**/node_modules/bluebird/js/release/util.js",
-				"**/node_modules/bluebird/js/release/async.js",
-				"**/node_modules/bluebird/js/release/debuggability.js",
-				"**/node_modules/sinon/lib/sinon/assert.js"
-			],
 			"restart": true
 		},
 		{
