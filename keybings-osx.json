@@ -32,11 +32,11 @@
     },
     {
         "key": "cmd+alt+c",
-        "command": "workbench.action.git.globalOpenChange"
+        "command": "git.openChangeFromUri"
     },
     {
         "key": "cmd+alt+e",
-        "command": "workbench.action.git.globalOpenFile"
+        "command": "git.openFileFromUri"
     },
     {
         "key": "shift+cmd+f5",
