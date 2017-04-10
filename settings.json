@@ -28,6 +28,7 @@
   "editor.formatOnPaste": true,
   "debug.inlineValues": true,
   "workbench.iconTheme": "vs-seti",
+  "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -70,6 +71,14 @@
       ],
       "after": [
         "<right>"
+      ]
+    },
+    {
+      "before": [
+        "h"
+      ],
+      "after": [
+        ";"
       ]
     }
   ],
