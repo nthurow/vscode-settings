@@ -11,7 +11,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'https://github.com/Quramy/tsuquyomi'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " Maybe just use :b <tab> instead Plugin 'jlanzarotta/bufexplorer'
 
 call vundle#end()
@@ -60,3 +62,9 @@ set softtabstop=2
 set autoindent
 set smartindent
 
+" Activate airline immediately: https://github.com/vim-airline/vim-airline/wiki/FAQ
+set laststatus=2
+" Add powerline font symbols
+let g:airline_powerline_fonts=1
+" Disable default mode since airline shows it to us anyways
+set noshowmode
