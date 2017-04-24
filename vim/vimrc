@@ -14,6 +14,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
 " Maybe just use :b <tab> instead Plugin 'jlanzarotta/bufexplorer'
 
 call vundle#end()
