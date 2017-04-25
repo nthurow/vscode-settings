@@ -2,6 +2,8 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
+set relativenumber
+
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -19,6 +21,8 @@ Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
+syntax enable
+set term=xterm-256color
 
 " Leader key
 let mapleader=","
@@ -51,10 +55,8 @@ let g:netrw_liststyle = 3
 " TypeScript (tsuquyomi) settings
 " set <F12>=<C-v><F12>
 noremap <F12> :TsuquyomiDefinition<CR>
+noremap <F2> :TsuRenameSymbol<CR>
 autocmd FileType typescript nmap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<CR>
-
-set relativenumber
-syntax enable
 
 " Tab settings
 set expandtab
@@ -68,4 +70,16 @@ set laststatus=2
 " Add powerline font symbols
 let g:airline_powerline_fonts=1
 " Disable default mode since airline shows it to us anyways
+
+" Fix OSX backspace issues
+set backspace=indent,eol,start
 set noshowmode
+
+" Add cursorline
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END
+hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
+
