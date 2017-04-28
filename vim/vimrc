@@ -3,6 +3,7 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 set relativenumber
+set autowriteall
 
 call vundle#begin()
 
@@ -17,6 +18,7 @@ Plugin 'Quramy/tsuquyomi'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
+Plugin 'christoomey/vim-tmux-navigator'
 " Maybe just use :b <tab> instead Plugin 'jlanzarotta/bufexplorer'
 
 call vundle#end()
@@ -56,6 +58,7 @@ let g:netrw_liststyle = 3
 " set <F12>=<C-v><F12>
 noremap <F12> :TsuquyomiDefinition<CR>
 noremap <F2> :TsuRenameSymbol<CR>
+inoremap <leader>, <C-x><C-o>
 autocmd FileType typescript nmap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<CR>
 
 " Tab settings
