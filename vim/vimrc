@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 set relativenumber
 set autowriteall
+set autoread
 
 call vundle#begin()
 
