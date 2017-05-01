@@ -20,12 +20,15 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'ternjs/tern_for_vim'
 " Maybe just use :b <tab> instead Plugin 'jlanzarotta/bufexplorer'
 
 call vundle#end()
 filetype plugin indent on
+filetype plugin on
 syntax enable
 set term=xterm-256color
+set omnifunc=syntaxcomplete#Complete
 
 " Leader key
 let mapleader=","
@@ -57,10 +60,13 @@ let g:netrw_liststyle = 3
 
 " TypeScript (tsuquyomi) settings
 " set <F12>=<C-v><F12>
-noremap <F12> :TsuquyomiDefinition<CR>
-noremap <F2> :TsuRenameSymbol<CR>
+autocmd FileType typescript noremap <F12> :TsuquyomiDefinition<CR>
+autocmd FileType javascript noremap <F12> :TernDef<CR>
+autocmd FileType typescript noremap <F2> :TsuRenameSymbol<CR>
+autocmd FileType javascript noremap <F2> :TernRename<CR>
 inoremap <leader>, <C-x><C-o>
 autocmd FileType typescript nmap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<CR>
+autocmd FileType javascript nmap <buffer> <leader>t :TernType<CR>
 
 " Tab settings
 set expandtab
@@ -87,3 +93,4 @@ augroup CursorLine
 augroup END
 hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
 
+colorscheme apprentice
