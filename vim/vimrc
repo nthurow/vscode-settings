@@ -21,6 +21,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ternjs/tern_for_vim'
+Plugin 'tpope/vim-surround'
 " Maybe just use :b <tab> instead Plugin 'jlanzarotta/bufexplorer'
 
 call vundle#end()
@@ -93,4 +94,4 @@ augroup CursorLine
 augroup END
 hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
 
-colorscheme apprentice
+colorscheme current
