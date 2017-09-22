@@ -51,6 +51,13 @@ nnoremap <C-tab> :bnext
 nnoremap <C-e> :NERDTree<CR>
 nnoremap <leader>f :NERDTreeFocus<CR>
 
+" Shortcuts for splits
+noremap <leader>v :vsplit<CR>
+noremap <leader>h :split<CR>
+
+" Shortcut for quit
+noremap <leader>q :q<CR>
+
 " Make CtrlP work with ctrl-p
 nnoremap <C-p> :CtrlP<CR>
 " Make CtrlP use .gitignore file
