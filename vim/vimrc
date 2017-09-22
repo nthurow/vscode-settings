@@ -1,11 +1,12 @@
-" Vundle
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 set relativenumber
+set number
 set autowriteall
 set autoread
 
+" Vundle
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -14,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'jiangmiao/auto-pairs'
+" Plugin 'jiangmiao/auto-pairs'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -48,6 +49,7 @@ nnoremap <C-tab> :bnext
 
 " NERDTree toggle
 nnoremap <C-e> :NERDTree<CR>
+nnoremap <leader>f :NERDTreeFocus<CR>
 
 " Make CtrlP work with ctrl-p
 nnoremap <C-p> :CtrlP<CR>
@@ -89,9 +91,9 @@ set noshowmode
 colorscheme current
 
 " Add cursorline
-augroup CursorLine
-  au!
-  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-  au WinLeave * setlocal nocursorline
-augroup END
-hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
+" augroup CursorLine
+"   au!
+"   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+"   au WinLeave * setlocal nocursorline
+" augroup END
+" hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
