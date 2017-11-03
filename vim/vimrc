@@ -15,15 +15,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
-" Plugin 'jiangmiao/auto-pairs'
 Plugin 'Quramy/tsuquyomi'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'tpope/vim-surround'
-" Maybe just use :b <tab> instead Plugin 'jlanzarotta/bufexplorer'
 
 call vundle#end()
 filetype plugin indent on
@@ -35,7 +32,7 @@ set omnifunc=syntaxcomplete#Complete
 " Leader key
 let mapleader=","
 
-" Make jj switch to normal mode 
+" Make jj switch to normal mode
 inoremap jj <Esc>
 
 " Rebind arrow keys
@@ -63,6 +60,9 @@ noremap <leader>w :w<CR>
 nnoremap <C-p> :CtrlP<CR>
 " Make CtrlP use .gitignore file
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" Remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Built-in file explorer settings
 let g:netrw_winsize = 25
