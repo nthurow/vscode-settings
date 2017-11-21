@@ -35,6 +35,9 @@ let mapleader=","
 " Make jj switch to normal mode
 inoremap jj <Esc>
 
+" Make ,w save and write in insert mode
+inoremap <leader>w <Esc>:wa<CR>
+
 " Rebind arrow keys
 noremap j <left>
 noremap k <down>
@@ -54,7 +57,12 @@ noremap <leader>h :split<CR>
 
 " Shortcut for write/quit
 noremap <leader>q :q<CR>
-noremap <leader>w :w<CR>
+noremap <leader>w :wa<CR>
+
+" Fugitive shortcuts
+noremap <leader>gs :Gstatus<CR>
+noremap <leader>gi :Gdiff<CR>
+noremap <leader>gc :Gcommit -m "
 
 " Make CtrlP work with ctrl-p
 nnoremap <C-p> :CtrlP<CR>
