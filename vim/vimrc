@@ -94,12 +94,6 @@ set softtabstop=2
 set autoindent
 set smartindent
 
-" Activate airline immediately: https://github.com/vim-airline/vim-airline/wiki/FAQ
-set laststatus=2
-" Add powerline font symbols
-let g:airline_powerline_fonts=1
-" Disable default mode since airline shows it to us anyways
-
 " Fix OSX backspace issues
 set backspace=indent,eol,start
 set noshowmode
