@@ -48,6 +48,8 @@ noremap l <up>
 noremap ; <right>
 noremap h ;
 
+noremap <leader>e /'\<Bar>"\<Bar>(\<Bar>)\<Bar>\[\<Bar>\]\<Bar>{\<Bar>}\<Bar>\.\<Bar>,<CR>
+
 nnoremap <C-tab> :bnext
 
 " NERDTree toggle
