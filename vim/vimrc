@@ -21,7 +21,6 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'tpope/vim-surround'
 
@@ -48,12 +47,13 @@ inoremap jj <Esc>
 " Make ,w save and write in insert mode
 inoremap <leader>w <Esc>:wa<CR>
 
-" Rebind arrow keys
-noremap j <left>
-noremap k <down>
-noremap l <up>
-noremap ; <right>
-noremap h ;
+" Changes to navigating vim splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
 
 noremap gh /'\<Bar>"\<Bar>(\<Bar>)\<Bar>\[\<Bar>\]\<Bar>{\<Bar>}\<Bar>\.\<Bar>,<CR>
 
