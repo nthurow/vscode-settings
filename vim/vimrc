@@ -53,6 +53,10 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+tnoremap <C-J> <C-W><C-J>
+tnoremap <C-K> <C-W><C-K>
+tnoremap <C-L> <C-W><C-L>
+tnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
@@ -119,6 +123,9 @@ set smartindent
 " Fix OSX backspace issues
 set backspace=indent,eol,start
 set noshowmode
+
+" Disable line numbers in terminal mode
+autocmd BufWinEnter * if &buftype == 'terminal' | setlocal norelativenumber | setlocal nonumber | endif
 
 colorscheme current
 
