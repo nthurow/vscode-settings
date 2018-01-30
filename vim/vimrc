@@ -129,6 +129,9 @@ set noshowmode
 " Disable line numbers in terminal mode
 autocmd BufWinEnter * if &buftype == 'terminal' | setlocal norelativenumber | setlocal nonumber | endif
 
+" Quickly jump to previous buffer
+noremap <leader>p :b#<CR>
+
 colorscheme current
 
 " Add cursorline
