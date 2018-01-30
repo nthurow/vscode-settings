@@ -85,6 +85,8 @@ noremap <leader>gc :Gcommit -m "
 nnoremap <C-p> :CtrlP<CR>
 " Make CtrlP use .gitignore file
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+" Make CtrlP always use vim working directory
+let g:ctrlp_working_path_mode = 0
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
