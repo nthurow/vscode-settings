@@ -128,6 +128,10 @@ set noshowmode
 
 " Disable line numbers in terminal mode
 autocmd BufWinEnter * if &buftype == 'terminal' | setlocal norelativenumber | setlocal nonumber | endif
+" Shortcut for running tests in current terminal window
+nnoremap <leader>yt :term ++curwin yarn test<CR>
+" Quickly open window suitable for terminal
+nnoremap <leader>ot :botright :new<CR>:setlocal winfixheight<CR>
 
 " Quickly jump to previous buffer
 noremap <leader>p :b#<CR>
