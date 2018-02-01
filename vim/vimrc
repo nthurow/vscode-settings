@@ -137,11 +137,3 @@ nnoremap <leader>ot :botright :new<CR>:setlocal winfixheight<CR>
 noremap <leader>p :b#<CR>
 
 colorscheme current
-
-" Add cursorline
-" augroup CursorLine
-"   au!
-"   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-"   au WinLeave * setlocal nocursorline
-" augroup END
-" hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
