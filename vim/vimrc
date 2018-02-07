@@ -100,10 +100,6 @@ let g:netrw_liststyle = 3
 let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.ts PrettierAsync
-let g:prettier#config#single_quote = 'true'
-let g:prettier#config#print_width = 120
-let g:prettier#config#bracket_spacing = 'false'
-let g:prettier#config#arrow_parens = 'always'
 
 " TypeScript (tsuquyomi) settings
 " set <F12>=<C-v><F12>
