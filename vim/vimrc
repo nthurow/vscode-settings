@@ -89,7 +89,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 let g:ctrlp_working_path_mode = 0
 
 " Remove trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * if &buftype != 'terminal' | :%s/\s\+$//e | endif
 
 " Built-in file explorer settings
 let g:netrw_winsize = 25
