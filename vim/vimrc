@@ -18,7 +18,7 @@ endif
 filetype plugin indent on
 filetype plugin on
 syntax enable
-set term=xterm-256color
+set term=screen-256color
 set omnifunc=syntaxcomplete#Complete
 
 " Leader key
