@@ -3,7 +3,6 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 set relativenumber
 set number
-set autowriteall
 set autoread
 
 " Why on earth would I want modelines to work?
