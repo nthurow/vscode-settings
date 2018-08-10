@@ -131,4 +131,7 @@ nnoremap <leader>ot :botright :new<CR>:setlocal winfixheight<CR>
 " Quickly jump to previous buffer
 noremap <leader>p :b#<CR>
 
+" Navigate lgrep search results
+nnoremap <leader>n :lnext<CR>
+nnoremap <leader>N :lprevious<CR>
 colorscheme current
