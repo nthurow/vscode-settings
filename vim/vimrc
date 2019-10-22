@@ -17,12 +17,17 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
+"Plugin 'HerringtonDarkholme/yats'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'tpope/vim-surround'
 Plugin 'prettier/vim-prettier'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'tomasiser/vim-code-dark'
 
 call vundle#end()
 
@@ -84,6 +89,7 @@ noremap <leader>gc :Gcommit -m "
 nnoremap <C-p> :CtrlP<CR>
 " Make CtrlP use .gitignore file
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+" let g:ctrlp_user_command = ['git --git-dir=%s/.git ls-files -oc --exclude-standard']
 " Make CtrlP always use vim working directory
 let g:ctrlp_working_path_mode = 0
 
@@ -99,6 +105,12 @@ let g:netrw_liststyle = 3
 let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.ts PrettierAsync
+autocmd BufWritePre *.js PrettierAsync
+autocmd BufWritePre *.tsx PrettierAsync
+autocmd BufWritePre *.html PrettierAsync
+autocmd BufWritePre *.css PrettierAsync
+autocmd BufWritePre *.scss PrettierAsync
+autocmd BufWritePre *.json PrettierAsync
 
 " TypeScript (tsuquyomi) settings
 " set <F12>=<C-v><F12>
@@ -134,4 +146,12 @@ noremap <leader>p :b#<CR>
 " Navigate lgrep search results
 nnoremap <leader>n :lnext<CR>
 nnoremap <leader>N :lprevious<CR>
-colorscheme current
+
+" Macros for inserting node modules
+nnoremap <leader>a iimport {} from '';<Esc>hi
+inoremap <leader>a import {} from '';<Esc>hi
+
+nnoremap <leader>s ?}<CR>i<C-x><C-o>
+inoremap <leader>s <Esc>?}<CR>i<C-x><C-o>
+
+colorscheme codedark
