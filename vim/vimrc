@@ -120,6 +120,7 @@ autocmd FileType typescript noremap <F2> :TsuRenameSymbol<CR>
 autocmd FileType javascript noremap <F2> :TernRename<CR>
 inoremap <leader>, <C-x><C-o>
 autocmd FileType typescript nmap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<CR>
+autocmd FileType tsx nmap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<CR>
 autocmd FileType javascript nmap <buffer> <leader>t :TernType<CR>
 
 " Tab settings
