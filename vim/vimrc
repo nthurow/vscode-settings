@@ -19,13 +19,14 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
 "Plugin 'HerringtonDarkholme/yats'
 Plugin 'Quramy/tsuquyomi'
-Plugin 'itchyny/lightline.vim'
+"Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'tpope/vim-surround'
 Plugin 'prettier/vim-prettier'
 Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+"Plugin 'mxw/vim-jsx'
+"Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'tomasiser/vim-code-dark'
 
@@ -114,13 +115,12 @@ autocmd BufWritePre *.json PrettierAsync
 
 " TypeScript (tsuquyomi) settings
 " set <F12>=<C-v><F12>
-autocmd FileType typescript noremap <F12> :TsuquyomiDefinition<CR>
+autocmd FileType typescript,typescript.tsx noremap <F12> :TsuquyomiDefinition<CR>
 autocmd FileType javascript noremap <F12> :TernDef<CR>
-autocmd FileType typescript noremap <F2> :TsuRenameSymbol<CR>
+autocmd FileType typescript,typescript.tsx noremap <F2> :TsuRenameSymbol<CR>
 autocmd FileType javascript noremap <F2> :TernRename<CR>
 inoremap <leader>, <C-x><C-o>
-autocmd FileType typescript nmap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<CR>
-autocmd FileType tsx nmap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<CR>
+autocmd FileType typescript,typescript.tsx nmap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<CR>
 autocmd FileType javascript nmap <buffer> <leader>t :TernType<CR>
 
 " Tab settings
