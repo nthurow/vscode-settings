@@ -1,20 +1,15 @@
 // Place your settings in this file to overwrite the default settings
 {
   "files.autoSave": "onFocusChange",
-  "editor.rulers": [
-    120
-  ],
+  "editor.rulers": [120],
   "html.format.endWithNewline": true,
-  "editor.formatOnType": true,
   "editor.tabSize": 2,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "workbench.editor.showTabs": false,
   "editor.renderIndentGuides": true,
   "explorer.openEditors.visible": 0,
-  "git.enableLongCommitWarning": false,
   "search.quickOpen.includeSymbols": true,
   "extensions.autoUpdate": true,
-  "eslint.autoFixOnSave": true,
   "git.confirmSync": false,
   "files.associations": {
     "*.conf": "logstash"
@@ -24,63 +19,18 @@
   "window.zoomLevel": 0,
   "window.openFilesInNewWindow": "on",
   "window.openFoldersInNewWindow": "on",
-  "window.newWindowDimensions": "maximized",
+  "window.newWindowDimensions": "inherit",
   "editor.formatOnPaste": true,
   "debug.inlineValues": true,
-  "workbench.iconTheme": "vs-seti",
-  "vim.useSystemClipboard": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.otherModesKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "j"
-      ],
-      "after": [
-        "<left>"
-      ]
-    },
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "<down>"
-      ]
-    },
-    {
-      "before": [
-        "l"
-      ],
-      "after": [
-        "<up>"
-      ]
-    },
-    {
-      "before": [
-        ";"
-      ],
-      "after": [
-        "<right>"
-      ]
-    },
-    {
-      "before": [
-        "h"
-      ],
-      "after": [
-        ";"
-      ]
-    }
-  ],
-  "editor.lineNumbers": "relative"
+  "editor.minimap.enabled": false,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "azure-event-hub-explorer.eventHubConnectionString": "Endpoint=sb://hemi-einstein-dev.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=GHRfgCvNwDD4BuJG0ed+B0Ko6IBV8V9tii28RCLoRGE=",
+  "azure-event-hub-explorer.eventHubEntityName": "mtl_system_items_b",
+  "azureFunctions.showCoreToolsWarning": false,
+  "diffEditor.renderSideBySide": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
