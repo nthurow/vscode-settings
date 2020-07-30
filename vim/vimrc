@@ -156,4 +156,7 @@ inoremap <leader>a import {} from '';<Esc>hi
 nnoremap <leader>s ?}<CR>i<C-x><C-o>
 inoremap <leader>s <Esc>?}<CR>i<C-x><C-o>
 
+" Restart TS Server
+nnoremap <leader>tsu :TsuStopServer<CR>:TsuStartServer<CR>:TsuReloadProject<CR>
+
 colorscheme codedark
