@@ -16,21 +16,19 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins here
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
-Plugin 'leafgarland/typescript-vim'
-"Plugin 'HerringtonDarkholme/yats'
-Plugin 'Quramy/tsuquyomi'
-"Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'ternjs/tern_for_vim'
 Plugin 'tpope/vim-surround'
 Plugin 'prettier/vim-prettier'
-Plugin 'pangloss/vim-javascript'
-"Plugin 'mxw/vim-jsx'
-"Plugin 'maxmellon/vim-jsx-pretty'
-Plugin 'peitalin/vim-jsx-typescript'
-Plugin 'tomasiser/vim-code-dark'
+
+Plugin 'pangloss/vim-javascript'    " JavaScript support
+Plugin 'leafgarland/typescript-vim' " TypeScript syntax
+Plugin 'maxmellon/vim-jsx-pretty'     " JS and JSX syntax
+Plugin 'neoclide/coc.nvim' , { 'branch' : 'release' }
 
 call vundle#end()
+
+" Install coc-tsserver
+let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 " Use ripgrep if present
 if executable("rg")
@@ -160,4 +158,4 @@ inoremap <leader>s <Esc>?}<CR>i<C-x><C-o>
 " Restart TS Server
 nnoremap <leader>tsu :TsuStopServer<CR>:TsuStartServer<CR>:TsuReloadProject<CR>
 
-colorscheme codedark
+" colorscheme codedark
