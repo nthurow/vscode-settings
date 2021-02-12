@@ -24,6 +24,7 @@ Plugin 'pangloss/vim-javascript'    " JavaScript support
 Plugin 'leafgarland/typescript-vim' " TypeScript syntax
 Plugin 'maxmellon/vim-jsx-pretty'     " JS and JSX syntax
 Plugin 'neoclide/coc.nvim' , { 'branch' : 'release' }
+Plugin 'tomasiser/vim-code-dark'
 
 call vundle#end()
 
@@ -115,13 +116,17 @@ autocmd BufWritePre *.md PrettierAsync
 
 " TypeScript (tsuquyomi) settings
 " set <F12>=<C-v><F12>
-autocmd FileType typescript,typescript.tsx noremap <F12> :TsuquyomiDefinition<CR>
-autocmd FileType javascript noremap <F12> :TernDef<CR>
-autocmd FileType typescript,typescript.tsx noremap <F2> :TsuRenameSymbol<CR>
-autocmd FileType javascript noremap <F2> :TernRename<CR>
-inoremap <leader>, <C-x><C-o>
-autocmd FileType typescript,typescript.tsx nmap <buffer> <leader>t :echo tsuquyomi#hint()<CR>
-autocmd FileType javascript nmap <buffer> <leader>t :TernType<CR>
+" autocmd FileType typescript,typescript.tsx noremap <F12> :TsuquyomiDefinition<CR>
+" autocmd FileType javascript noremap <F12> :TernDef<CR>
+" autocmd FileType typescript,typescript.tsx noremap <F2> :TsuRenameSymbol<CR>
+" autocmd FileType javascript noremap <F2> :TernRename<CR>
+" inoremap <leader>, <C-x><C-o>
+" autocmd FileType typescript,typescript.tsx nmap <buffer> <leader>t :echo tsuquyomi#hint()<CR>
+" autocmd FileType javascript nmap <buffer> <leader>t :TernType<CR>
+
+" Coc settings
+inoremap <silent><expr> <leader>, coc#refresh()
+nmap <leader>gr <Plug>(coc-references)
 
 " Tab settings
 set expandtab
@@ -158,4 +163,4 @@ inoremap <leader>s <Esc>?}<CR>i<C-x><C-o>
 " Restart TS Server
 nnoremap <leader>tsu :TsuStopServer<CR>:TsuStartServer<CR>:TsuReloadProject<CR>
 
-" colorscheme codedark
+colorscheme codedark
