@@ -1,0 +1,10 @@
+{
+  "suggest.autoTrigger": "none",
+  "coc.preferences.useQuickfixForLocations": true,
+  "tsserver.formatOnType": false,
+  "typescript.validate.enable": true,
+  "typescript.referencesCodeLens.enable": false,
+  "typescript.showUnused": false,
+  "typescript.suggest.enabled": false,
+  "typescript.format.enabled": false
+}
