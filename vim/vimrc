@@ -85,6 +85,9 @@ noremap <leader>gs :Gstatus<CR>
 noremap <leader>gi :Gdiff<CR>
 noremap <leader>gc :Gcommit -m "
 
+" Quickly jump to previous file
+nnoremap <C-t> :CtrlPMRU<CR><CR>
+
 " Make CtrlP work with ctrl-p
 nnoremap <C-p> :CtrlP<CR>
 " Make CtrlP use .gitignore file
@@ -127,6 +130,10 @@ autocmd BufWritePre *.md PrettierAsync
 " Coc settings
 inoremap <silent><expr> <leader>, coc#refresh()
 nmap <leader>gr <Plug>(coc-references)
+nmap <F2> <Plug>(coc-rename)
+nmap <F12> <Plug>(coc-definition)
+nmap <leader>ge <Plug>(coc-float-jump)
+nnoremap <leader>t :call CocAction('doHover')<CR>
 
 " Tab settings
 set expandtab
