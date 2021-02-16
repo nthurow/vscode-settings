@@ -132,7 +132,7 @@ inoremap <silent><expr> <leader>, coc#refresh()
 nmap <leader>gr <Plug>(coc-references)
 nmap <F2> <Plug>(coc-rename)
 nmap <F12> <Plug>(coc-definition)
-nmap <leader>ge <Plug>(coc-float-jump)
+nmap <leader>ca <Plug>(coc-codeaction)
 nnoremap <leader>t :call CocAction('doHover')<CR>
 
 " Tab settings
