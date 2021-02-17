@@ -107,7 +107,13 @@ let g:netrw_liststyle = 3
 " Prettier plugin settings
 let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
+let g:prettier#config#single_quote = 'true'
+let g:prettier#config#print_width = 120
+let g:prettier#config#bracket_spacing = 'false'
+let g:prettier#config#arrow_parens = 'always'
+let g:prettier#config#tab_width = 2
 let g:prettier#config#trailing_comma = 'none'
+let g:prettier#config#end_of_line = 'auto'
 autocmd BufWritePre *.ts PrettierAsync
 autocmd BufWritePre *.js PrettierAsync
 autocmd BufWritePre *.tsx PrettierAsync
