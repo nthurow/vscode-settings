@@ -1,32 +1,11 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
 set relativenumber
 set number
 set autoread
 
 " Why on earth would I want modelines to work?
 set modelines=0
-
-" Vundle
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-
-" Plugins here
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'prettier/vim-prettier'
-
-Plugin 'pangloss/vim-javascript'    " JavaScript support
-Plugin 'leafgarland/typescript-vim' " TypeScript syntax
-Plugin 'maxmellon/vim-jsx-pretty'     " JS and JSX syntax
-Plugin 'neoclide/coc.nvim' , { 'branch' : 'release' }
-Plugin 'tomasiser/vim-code-dark'
-
-call vundle#end()
 
 " Install coc-tsserver
 let g:coc_global_extensions = [ 'coc-tsserver' ]
