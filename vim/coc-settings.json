@@ -6,5 +6,21 @@
   "typescript.referencesCodeLens.enable": false,
   "typescript.showUnused": false,
   "typescript.suggest.enabled": false,
-  "typescript.format.enabled": false
+  "typescript.format.enabled": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "graphql",
+    "handlebars"
+  ],
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.bracketSpacing": false,
+  "prettier.arrowParens": "always",
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "none",
+  "prettier.endOfLine": "auto"
 }

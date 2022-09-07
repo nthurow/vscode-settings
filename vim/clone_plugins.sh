@@ -3,7 +3,6 @@ mkdir -p ~/.vim/pack/plugins/start/
 git clone git@github.com:preservim/nerdtree.git ~/.vim/pack/plugins/start/nerdtree
 git clone git@github.com:ctrlpvim/ctrlp.vim.git ~/.vim/pack/plugins/start/ctrlp.vim
 git clone git@github.com:tpope/vim-surround.git ~/.vim/pack/plugins/start/vim-surround
-git clone git@github.com:prettier/vim-prettier.git ~/.vim/pack/plugins/start/vim-prettier
 
 # JavaScript support
 git clone git@github.com:pangloss/vim-javascript.git ~/.vim/pack/plugins/start/vim-javascript
