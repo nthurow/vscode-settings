@@ -60,7 +60,7 @@ noremap <leader>q :q<CR>
 noremap <leader>w :wa<CR>
 
 " Fugitive shortcuts
-noremap <leader>gs :Gstatus<CR>
+noremap <leader>gs :G<CR>
 noremap <leader>gi :Gdiff<CR>
 noremap <leader>gc :Gcommit -m "
 
