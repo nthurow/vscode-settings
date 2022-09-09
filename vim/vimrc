@@ -1,5 +1,4 @@
 set nocompatible
-filetype off
 set relativenumber
 set number
 set autoread
@@ -62,8 +61,6 @@ noremap <leader>gs :G<CR>
 noremap <leader>gi :Gdiff<CR>
 noremap <leader>gc :Gcommit -m "
 
-" Make CtrlP work with ctrl-p
-nnoremap <C-p> :CtrlP<CR>
 " Make CtrlP use .gitignore file
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 " Make CtrlP always use vim working directory
