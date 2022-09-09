@@ -45,8 +45,6 @@ set splitright
 
 noremap gh /'\<Bar>"\<Bar>(\<Bar>)\<Bar>\[\<Bar>\]\<Bar>{\<Bar>}\<Bar>\.\<Bar>,<CR>
 
-nnoremap <C-tab> :bnext
-
 " NERDTree toggle
 nnoremap <C-e> :NERDTree<CR>
 nnoremap <leader>f :NERDTreeFocus<CR>
@@ -64,14 +62,10 @@ noremap <leader>gs :G<CR>
 noremap <leader>gi :Gdiff<CR>
 noremap <leader>gc :Gcommit -m "
 
-" Quickly jump to previous file
-nnoremap <C-t> :CtrlPMRU<CR><CR>
-
 " Make CtrlP work with ctrl-p
 nnoremap <C-p> :CtrlP<CR>
 " Make CtrlP use .gitignore file
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-" let g:ctrlp_user_command = ['git --git-dir=%s/.git ls-files -oc --exclude-standard']
 " Make CtrlP always use vim working directory
 let g:ctrlp_working_path_mode = 0
 
@@ -104,8 +98,6 @@ set noshowmode
 
 " Disable line numbers in terminal mode
 autocmd BufWinEnter * if &buftype == 'terminal' | setlocal norelativenumber | setlocal nonumber | endif
-" Shortcut for running tests in current terminal window
-nnoremap <leader>yt :term ++curwin yarn test<CR>
 " Quickly open window suitable for terminal
 nnoremap <leader>ot :botright :new<CR>:setlocal winfixheight<CR>
 
@@ -122,8 +114,5 @@ inoremap <leader>a import {} from '';<Esc>hi
 
 nnoremap <leader>s ?}<CR>i<C-x><C-o>
 inoremap <leader>s <Esc>?}<CR>i<C-x><C-o>
-
-" Restart TS Server
-nnoremap <leader>tsu :TsuStopServer<CR>:TsuStartServer<CR>:TsuReloadProject<CR>
 
 colorscheme codedark
