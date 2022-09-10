@@ -7,7 +7,7 @@ set autoread
 set modelines=0
 
 " Install coc-tsserver
-let g:coc_global_extensions = [ 'coc-tsserver' ]
+let g:coc_global_extensions = [ 'coc-tsserver', 'coc-prettier' ]
 
 " Use ripgrep if present
 if executable("rg")
