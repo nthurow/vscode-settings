@@ -2,6 +2,7 @@ set nocompatible
 set relativenumber
 set number
 set autoread
+set clipboard=unnamed
 
 " Why on earth would I want modelines to work?
 set modelines=0
