@@ -15,7 +15,8 @@
     "typescriptreact",
     "json",
     "graphql",
-    "handlebars"
+    "handlebars",
+    "markdown"
   ],
   "prettier.singleQuote": true,
   "prettier.printWidth": 120,
